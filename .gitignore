@@ -1,0 +1,4 @@
+.cache/
+LICENSE
+dist/
+node_modules/

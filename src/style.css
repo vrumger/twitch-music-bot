@@ -1,0 +1,24 @@
+.logs > span {
+    display: block;
+    font-family: monospace;
+}
+
+.songs {
+    margin-top: 1rem;
+}
+
+.songs > span {
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+}
+
+.songs .user {
+    margin-right: 0.2rem;
+}
+
+.songs .remove {
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}

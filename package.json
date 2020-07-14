@@ -1,0 +1,29 @@
+{
+  "name": "twitch-music-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html --no-source-maps",
+    "build": "parcel build src/index.html --no-source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewLaneX/twitch-music-bot.git"
+  },
+  "author": "Andrew Lane <contact@lungers.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AndrewLaneX/twitch-music-bot/issues"
+  },
+  "homepage": "https://github.com/AndrewLaneX/twitch-music-bot#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "tmi.js": "^1.5.0"
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ]
+}
