@@ -35,6 +35,7 @@ const addSong = async ({ user, url }) => {
 
 export const resetSongs = async songs => {
     localStorage.songs = JSON.stringify([...songs.values()]);
+    songsElement.innerHTML = '';
 
     for (const [, song] of songs) {
         await addSong(song);
