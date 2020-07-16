@@ -7,7 +7,7 @@ export const addLog = message => {
     logsElement.append(log);
 };
 
-const addSong = async ({ user, url }) => {
+const getSongData = async ({ user, url }) => {
     const response = await fetch(`https://embtr.now.sh/scrape?url=${url}`);
     const { title } = await response.json();
 
@@ -30,14 +30,16 @@ const addSong = async ({ user, url }) => {
     container.classList.add('song');
     container.append(remove, userElement, anchor);
 
-    songsElement.append(container);
+    return container;
 };
 
 export const resetSongs = async songs => {
     localStorage.songs = JSON.stringify([...songs.values()]);
+
+    const songData = await Promise.all([...songs.values()].map(getSongData));
     songsElement.innerHTML = '';
 
-    for (const [, song] of songs) {
-        await addSong(song);
+    for (const songContainer of songData) {
+        songsElement.append(songContainer);
     }
 };
