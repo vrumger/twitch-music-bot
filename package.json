@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/AndrewLaneX/twitch-music-bot#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel": "^2.0.0-beta.2"
   },
   "dependencies": {
-    "tmi.js": "^1.5.0"
+    "tmi.js": "^1.8.2"
   },
   "browserslist": [
     "last 1 Chrome versions"
